@@ -90,3 +90,6 @@ table .action{
     display: flex;
     gap: 8px;
 }
+.add-item{
+    width: 40%;
+}
