@@ -9,6 +9,7 @@
   <body>
     <div class="main">
       <div class="container">
+        <img class="logo" src="assets/logo.jpg" alt="" />
         <h1>TaskWise</h1>
         <form class="form" type="submit">
           <div class="username">
@@ -16,6 +17,7 @@
               type="text"
               id="username"
               class="username"
+              name="email"
               placeholder="Username"
             />
             <svg
@@ -42,6 +44,7 @@
               type="password"
               id="password"
               class="password"
+              name="password"
               placeholder="Password"
             />
             <svg
@@ -69,6 +72,9 @@
           </div>
           <button type="submit">Submit</button>
         </form>
+        <p class="noacc">
+          Don't have account? <a href="signup.html">Sign Up</a>
+        </p>
       </div>
     </div>
   </body>

@@ -16,6 +16,7 @@
   );
 }
 .container {
+  position: relative;
   background-color: white;
   width: fit-content;
   height: fit-content;
@@ -24,15 +25,28 @@
   padding: 20px;
   border-radius: 10px;
   font-family: 'PT Sans', Calibri, Tahoma, sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.container .logo{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 .container h1 {
   text-align: center;
-  padding-bottom: 20px;
+  padding:40px 0px 20px 0px ;
 }
 .container .form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-bottom: 20px;
 }
 
 .container input {
@@ -43,23 +57,42 @@
   border-radius: 5px;
   border: 1px solid black;
   font-size: 16px;
+  width: 300px;
 }
 .container button {
   margin-top: 20px;
   font-size: 16px;
   padding: 10px;
   text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(98, 192, 205) 0%,
+    rgba(0, 245, 255, 0.6587885154061625) 100%
+  );
 }
 .container .form svg {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   position: absolute;
-  left: 3px;
-  top: 15%;
+  left: 7px;
+  top: 22%;
 }
 .container .form .username {
   position: relative;
 }
 .container .form .password {
   position: relative;
+}
+
+.main .container .noacc a{
+  text-decoration: none;
+ 
+}
+.main .container .noacc{
+  font-size: 18px;
 }
