@@ -7,13 +7,7 @@
 .main {
   padding-top: 10%;
   height: 100vh;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(80, 145, 153, 1) 0%,
-    rgba(0, 245, 255, 0.6587885154061625) 100%
-  );
+  background-color: rgba(128, 128, 128, 0.01);
 }
 .container {
   position: relative;
@@ -29,7 +23,7 @@
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.container .logo{
+.container .logo {
   position: absolute;
   top: -50px;
   left: 50%;
@@ -37,10 +31,11 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 .container h1 {
   text-align: center;
-  padding:40px 0px 20px 0px ;
+  padding: 40px 0px 20px 0px;
 }
 .container .form {
   display: flex;
@@ -65,15 +60,9 @@
   padding: 10px;
   text-transform: uppercase;
   border: none;
-  border-radius: 10px;
   cursor: pointer;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgb(98, 192, 205) 0%,
-    rgba(0, 245, 255, 0.6587885154061625) 100%
-  );
+  background-color: black;
+  color: white;
 }
 .container .form svg {
   height: 20px;
@@ -89,10 +78,9 @@
   position: relative;
 }
 
-.main .container .noacc a{
+.main .container .noacc a {
   text-decoration: none;
- 
 }
-.main .container .noacc{
+.main .container .noacc {
   font-size: 18px;
 }
