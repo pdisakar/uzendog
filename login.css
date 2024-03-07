@@ -5,16 +5,21 @@
 }
 
 .main {
-  padding-top: 10%;
-  height: 100vh;
   background-color: rgba(128, 128, 128, 0.01);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+.main .banner-img{
+  width: 700px;
+  height: 700px;
 }
 .container {
   position: relative;
   background-color: white;
   width: fit-content;
   height: fit-content;
-  margin: auto;
   padding-top: 50px;
   padding: 20px;
   border-radius: 10px;
@@ -55,7 +60,7 @@
   width: 300px;
 }
 
-.button-section input{
+.button-section input {
   display: none;
 }
 
@@ -106,6 +111,12 @@
   position: relative;
 }
 .container .form .password {
+  position: relative;
+}
+.container .form .name {
+  position: relative;
+}
+.container .form .phone {
   position: relative;
 }
 
