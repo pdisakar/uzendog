@@ -55,6 +55,10 @@
   width: 300px;
 }
 
+.button-section input{
+  display: none;
+}
+
 .button-section {
   margin-top: 15px;
   color: black;
