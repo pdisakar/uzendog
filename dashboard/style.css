@@ -91,6 +91,19 @@ table .action {
   display: flex;
   gap: 8px;
 }
+table .action button {
+  width: 58px;
+  height: 28px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid black;
+}
+table .action button:hover {
+  border: 1px solid red;
+  cursor: pointer;
+  background-color: red;
+  tra
+}
 
 /* add items */
 .add-item {
