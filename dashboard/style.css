@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'PT Sans', Calibri, Tahoma, sans-serif;
+  background-color: rgba(128, 128, 128, 0.01);
 }
 
 .navbar h1 {
@@ -11,7 +12,7 @@
 }
 
 .main-header {
-  background-color: orange;
+  background-color: #ffa500;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,39 +94,179 @@ table .action {
 
 /* add items */
 .add-item {
-  margin-top: 18px;
+  margin-top: 10%;
 }
 .add-item form {
-  background-color: gray;
+  background-color: white;
   width: 500px;
   margin: auto;
-  padding: 10px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .add-item form .name input {
   width: 100%;
   padding: 10px;
   font-size: 18px;
+  border: 1px solid black;
+  padding-left: 35px;
+}
+.add-item form .name {
+  position: relative;
+}
+.add-item form .name svg {
+  position: absolute;
+  left: 8px;
+  top: 11px;
+  width: 20px;
 }
 
 .add-item form .price-date {
   display: flex;
+  gap: 5px;
 }
-.add-item form .price-date input {
+.add-item form .price-date .price {
   width: 50%;
+  position: relative;
+}
+.add-item form .price-date .price svg {
+  width: 50%;
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  width: 30px;
+}
+.add-item form .price-date .date {
+  width: 50%;
+}
+.add-item form .price-date .price input {
+  width: 100%;
   padding: 10px;
   font-size: 18px;
+  border: 1px solid black;
+  padding-left: 30px;
+}
+.add-item form .price-date .date input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid black;
 }
 .add-item form .check-box {
   width: fit-content;
   margin: auto;
   font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .add-item form .button button {
   width: 100%;
   font-size: 18px;
   padding: 10px;
+}
+
+.button-section {
+  margin-top: 15px;
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+}
+.button-section:hover {
+  color: black;
+  border: 1px solid #ffa500;
+}
+
+.button-section::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: all 0.5s;
+  background-color: #ffa500;
+}
+
+.button-section:hover::before {
+  width: 160%;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ffa500;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #c58f11;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
