@@ -13,7 +13,6 @@
   background-size: cover; /* Resize the background image to cover the entire container */
   opacity: 0.8;
   /* background-color:black; */
-
 }
 
 .navbar h1 {
@@ -291,4 +290,26 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.navbar form {
+  background-color: white;
+  padding: 6px 8px;
+  cursor: pointer;
+  text-transform: capitalize;
+  border-radius: 5px;
+  position: relative;
+  padding-left: 28px;
+  
+}
+.navbar form a {
+  text-decoration: none;
+  color: black;
+}
+.navbar form svg {
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  height: 25px;
+  width: 25px;
 }
