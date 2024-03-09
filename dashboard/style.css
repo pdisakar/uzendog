@@ -3,7 +3,17 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'PT Sans', Calibri, Tahoma, sans-serif;
-  background-color: rgba(128, 128, 128, 0.01);
+  /* background-image: url("../assets/bg.jpg"); */
+}
+.main-container {
+  background-image: url('../assets/bg.jpg');
+  height: 100vh;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  opacity: 0.8;
+  /* background-color:black; */
+
 }
 
 .navbar h1 {
@@ -102,12 +112,11 @@ table .action button:hover {
   border: 1px solid red;
   cursor: pointer;
   background-color: red;
-  tra
 }
 
 /* add items */
 .add-item {
-  margin-top: 10%;
+  padding-top: 10%;
 }
 .add-item form {
   background-color: white;
